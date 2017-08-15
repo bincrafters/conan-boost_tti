@@ -3,8 +3,8 @@ from conans import ConanFile, tools, os
 class BoostTtiConan(ConanFile):
     name = "Boost.Tti"
     version = "1.64.0"
-    generators = "txt"
-    url = "https://github.com/boostorg/tti"
+    url = "https://github.com/bincrafters/conan-boost-tti"
+    source_url = "https://github.com/boostorg/tti"
     description = "Please visit http://www.boost.org/doc/libs/1_64_0/libs/libraries.htm"
     license = "www.boost.org/users/license.html"
     lib_short_name = "tti"
@@ -19,7 +19,7 @@ class BoostTtiConan(ConanFile):
 
     def source(self):
         self.run("git clone --depth=50 --branch=boost-{0} {1}.git"
-                 .format(self.version, self.url))
+                 .format(self.version, self.source_url))
 
     def package(self):
         include_dir = os.path.join(self.build_folder, self.lib_short_name, "include")
