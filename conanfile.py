@@ -8,12 +8,12 @@ class BoostTtiConan(ConanFile):
     description = "Please visit http://www.boost.org/doc/libs/1_65_1/libs/libraries.htm"
     license = "www.boost.org/users/license.html"
     lib_short_names = ["tti"]
-    requires =  "Boost.Config/1.65.1@bincrafters/testing", \
-                      "Boost.Function_Types/1.65.1@bincrafters/testing", \
-                      "Boost.Mpl/1.65.1@bincrafters/testing", \
-                      "Boost.Optional/1.65.1@bincrafters/testing", \
-                      "Boost.Preprocessor/1.65.1@bincrafters/testing", \
-                      "Boost.Type_Traits/1.65.1@bincrafters/testing"
+    requires =  "Boost.Config/1.65.1@bincrafters/stable", \
+                      "Boost.Function_Types/1.65.1@bincrafters/stable", \
+                      "Boost.Mpl/1.65.1@bincrafters/stable", \
+                      "Boost.Optional/1.65.1@bincrafters/stable", \
+                      "Boost.Preprocessor/1.65.1@bincrafters/stable", \
+                      "Boost.Type_Traits/1.65.1@bincrafters/stable"
 
                       #config0 function_types5 mpl5 preprocessor0 type_traits3
 
