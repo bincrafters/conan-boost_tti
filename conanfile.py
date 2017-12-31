@@ -7,7 +7,7 @@ from conans import ConanFile, tools
 class BoostTtiConan(ConanFile):
     name = "boost_tti"
     version = "1.66.0"
-    url = "https://github.com/bincrafters/conan-boost-tti"
+    url = "https://github.com/bincrafters/conan-boost_tti"
 
     lib_short_names = ["tti"]
     is_header_only = True
