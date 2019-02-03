@@ -8,6 +8,7 @@ base = python_requires("boost_base/1.69.0@bincrafters/stable")
 
 class BoostTtiConan(base.BoostBaseConan):
     name = "boost_tti"
+    version = "1.69.0"
     url = "https://github.com/bincrafters/conan-boost_tti"
     lib_short_names = ["tti"]
     header_only_libs = ["tti"]
